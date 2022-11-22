@@ -75,7 +75,7 @@ For each model please run:
 ```
 Train: CUDA_VISIBLE_DEVICES=3 python train.py
 Test:  CUDA_VISIBLE_DEVICES=3 python eval.py
-Please use the default command
+Please use the default parameters
 ```
 ### Results
 <img src="https://github.com/ToneLi/SemMedDB/blob/main/results.png" width="500"/>
