@@ -23,7 +23,7 @@ how to plot the loss chart: **3_plot_loss.py**
 The final data: **data_progress/final_data/sentence_triple_train.jsonl** and **data_progress/final_data/sentence_triple_test.jsonl**
 
 ### step 2 Data argumentation
-Three Strategies are in the file data_argument. Example of the wordnet argumentation:
+Three Strategies are in the file data_argument. An example of the wordnet argumentation:
 ```
 from textattack.augmentation import WordNetAugmenter
 
