@@ -82,3 +82,4 @@ Test:  CUDA_VISIBLE_DEVICES=3 python eval.py
 Please use the default command
 ```
 ### Results
+<img src="https://github.com/ToneLi/HNZSLP/blob/main/framework.jpg" width="500"/>
