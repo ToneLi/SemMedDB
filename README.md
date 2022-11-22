@@ -1,5 +1,5 @@
 ### SemMedDB
-This task is about to extract a triple from a sentence, so I regard it as a classifcation task. To solve this task, I proposed three method Sequence vs. Data augmentation vs. Graph.
+This task is about to extract a triple from a sentence, so I regard it as a classifcation task. To solve this task, I proposed three method Sequence vs. Data augmentation vs. Graph. If you want to run the model, please skip into step4.
 
 ### Environment
 
@@ -7,6 +7,7 @@ This task is about to extract a triple from a sentence, so I regard it as a clas
 python3.6.5
 torch 1.4.0+cu100
 TextAttack 0.2.5
+
 ```
 ### step1: Preprogress
 You can skip this part, this step tells us:
@@ -68,4 +69,13 @@ def add_parsing_graph(file,stype):
             line["graph"]=triples
             entity_length.append(len(set(E)))
     return list(set(ER)),max(entity_length)
+```
+### Step 4 To run the model
+Note: For all model1, the data is same, it is in the file model1_bert_base. In the model model2_rotabert_large_argument2_gcn, the file Graph_ER_embedding.npy is in [Google Cloud](https://drive.google.com/file/d/1pkjLOq3lxReAqHh9tbw9nIEcaFkza0wp/view?usp=share_link)
+
+For each model please run:
+```
+Train: CUDA_VISIBLE_DEVICES=3 python train.py
+Test:  CUDA_VISIBLE_DEVICES=3 python eval.py
+Please use the default command
 ```
