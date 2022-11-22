@@ -22,4 +22,14 @@ how to plot the loss **3_plot_loss.py**
 The final data is **data_progress/final_data/sentence_triple_train.jsonl** and **data_progress/final_data/sentence_triple_test.jsonl**
 
 ## Data argumentation
-Three Strategies is 
+Three Strategies is in the file data_argument. There is an excample for the wordnet argument method
+
+```
+from textattack.augmentation import WordNetAugmenter
+
+text = "In both the oxidase activity as well as the MI complex formation phenobarbital induced cytochrome P-450 is involved"
+
+wordnet_aug = WordNetAugmenter()
+
+wordnet_aug.augment(text)
+```
