@@ -7,7 +7,9 @@ This task is about to extract a triple from a sentence, so I regard it as a clas
 python3.6.5
 torch 1.4.0+cu100
 TextAttack 0.2.5
-
+tensorflow 2.6.2
+spacy 3.3.1  en_core_web_sm (3.2.0)
+transformers 4.1.1
 ```
 ### step1: Preprogress
 You can skip this part, this step tells us:
@@ -79,3 +81,4 @@ Train: CUDA_VISIBLE_DEVICES=3 python train.py
 Test:  CUDA_VISIBLE_DEVICES=3 python eval.py
 Please use the default command
 ```
+### Results
