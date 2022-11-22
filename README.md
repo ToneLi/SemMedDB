@@ -12,8 +12,6 @@ spacy 3.3.1  en_core_web_sm (3.2.0)
 transformers 4.1.1
 ```
 ### step1: Preprogress
-You can skip this part, this step tells us:
-
 how to change the data to json file: **0_progress_file_extraction.py**
 
 how to plot the sentence length chart: **1_analysis_data.py**
