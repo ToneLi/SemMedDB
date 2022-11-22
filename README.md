@@ -69,7 +69,7 @@ def add_parsing_graph(file,stype):
     return list(set(ER)),max(entity_length)
 ```
 ### Step 4 How to to run the model
-Note: For model1, the data is in the file model1_bert_base. In the model model2_rotabert_large_argument2_gcn, the file Graph_ER_embedding.npy is in [Google Cloud](https://drive.google.com/file/d/1pkjLOq3lxReAqHh9tbw9nIEcaFkza0wp/view?usp=share_link)
+Note: For model1, the data is in the file model1_bert_base. In the model model2_rotabert_large_argument2_gcn, the file Graph_ER_embedding.npy is in [Google Cloud](https://drive.google.com/file/d/1pkjLOq3lxReAqHh9tbw9nIEcaFkza0wp/view?usp=share_link).
 
 For each model please run:
 ```
