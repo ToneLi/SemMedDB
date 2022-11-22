@@ -1,5 +1,5 @@
 ### SemMedDB
-This task is about to extract a triple from a sentence, so I regard it as a classifcation task. To solve this task, I proposed three method Sequence vs. Data augmentation vs. Graph. If you want to run the model, please skip into step4.
+This task is about extracting a triple from a sentence, I regard this task as a classification task. To solve this task, I proposed three methods Sequence vs. Data augmentation vs. Graph. If you want to run the model directly, please skip to step 4.
 
 ### Environment
 
