@@ -20,3 +20,6 @@ how to split the data into train and test set: **2_split_train_test.py**
 how to plot the loss **3_plot_loss.py**
 
 The final data is **data_progress/final_data/sentence_triple_train.jsonl** and **data_progress/final_data/sentence_triple_test.jsonl**
+
+## Data argumentation
+Three Strategies is 
