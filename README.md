@@ -1,5 +1,5 @@
 ### SemMedDB
-This task is about extracting a triple from a sentence, I regard this task as a classification task. To solve this task, I proposed three methods Sequence vs. Data augmentation vs. Graph. If you want to run the model directly, please skip to step 4.
+This task is about extracting a triple from a sentence, I regard this task as a classification task. To solve this task, I proposed three methods Sequence vs. Data augmentation vs. Graph. If you want to run the model, please skip to step 4 directly.
 
 ### Environment
 
@@ -18,15 +18,14 @@ how to change the data to json file: **0_progress_file_extraction.py**
 
 how to plot the sentence length chart: **1_analysis_data.py**
 
-how to split the data into train and test set: **2_split_train_test.py** 
+how to split the data into a train and test set: **2_split_train_test.py** 
 
-how to plot the loss **3_plot_loss.py**
+how to plot the loss chart: **3_plot_loss.py**
 
-The final data is **data_progress/final_data/sentence_triple_train.jsonl** and **data_progress/final_data/sentence_triple_test.jsonl**
+The final data: **data_progress/final_data/sentence_triple_train.jsonl** and **data_progress/final_data/sentence_triple_test.jsonl**
 
 ### step 2 Data argumentation
-Three Strategies is in the file data_argument. There is an excample for the wordnet argument method
-
+Three Strategies are in the file data_argument. Example of the wordnet argumentation:
 ```
 from textattack.augmentation import WordNetAugmenter
 
@@ -36,10 +35,9 @@ wordnet_aug = WordNetAugmenter()
 
 wordnet_aug.augment(text)
 ```
-### step 3 Build the dependency parse graph
-The progress about dependency parse graph is in the file  build_parising_graph.
+### step 3 How to build the dependency parse graph
+The progress about how to build dependency parse graph is in the file  build_parising_graph.
 code demo
-
 ```
 import json
 import spacy
@@ -72,8 +70,8 @@ def add_parsing_graph(file,stype):
             entity_length.append(len(set(E)))
     return list(set(ER)),max(entity_length)
 ```
-### Step 4 To run the model
-Note: For all model1, the data is same, it is in the file model1_bert_base. In the model model2_rotabert_large_argument2_gcn, the file Graph_ER_embedding.npy is in [Google Cloud](https://drive.google.com/file/d/1pkjLOq3lxReAqHh9tbw9nIEcaFkza0wp/view?usp=share_link)
+### Step 4 How to to run the model
+Note: The data is in the file model1_bert_base for model1. In the model model2_rotabert_large_argument2_gcn, the file Graph_ER_embedding.npy is in [Google Cloud](https://drive.google.com/file/d/1pkjLOq3lxReAqHh9tbw9nIEcaFkza0wp/view?usp=share_link)
 
 For each model please run:
 ```
