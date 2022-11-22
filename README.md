@@ -35,7 +35,7 @@ wordnet_aug.augment(text)
 ```
 ### step 3 How to build the dependency parse graph
 The progress about how to build dependency parse graph is in the file  build_parising_graph.
-code demo
+code demo:
 ```
 import json
 import spacy
