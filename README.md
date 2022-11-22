@@ -11,7 +11,7 @@ TextAttack 0.2.5
 ## Preprogress
 You can skip this part, this step tells us:
 
-how to change the data to json file: * 0_progress_file_extraction.py *
+how to change the data to json file: *0_progress_file_extraction.py*
 
 how to plot the sentence length chart: 1_analysis_data.py
 
